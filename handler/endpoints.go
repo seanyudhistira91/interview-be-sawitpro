@@ -26,39 +26,6 @@ func (*JwtCustomClaims) Valid() error {
 	panic("unimplemented")
 }
 
-// This is just a test endpoint to get you started. Please delete this endpoint.
-// (GET /hello)
-// TODO DELETE
-// func (s *Server) Hello(ctx echo.Context, params generated.HelloParams) error {
-
-// 	var resp generated.HelloResponse
-// 	resp.Message = fmt.Sprintf("Hello User %d", params.Id)
-// 	return ctx.JSON(http.StatusOK, resp)
-// }
-
-// // (GET /hello)
-// func (s *Server) Hello2(ctx echo.Context, params generated.Hello2Params) error {
-
-// 	var resp generated.HelloResponse
-// 	resp.Message = fmt.Sprintf("Hello User %d", params.Id)
-// 	return ctx.JSON(http.StatusOK, resp)
-// }
-
-// var privateKey *rsa.PrivateKey
-
-// func init() {
-// 	keyFile := "path/to/private_key.pem" // Replace with the path to your private key file
-// 	keyBytes, err := os.ReadFile(keyFile)
-// 	if err != nil {
-// 		log.Fatalf("Failed to read private key file: %v", err)
-// 	}
-
-// 	privateKey, err = jwt.ParseRSAPrivateKeyFromPEM(keyBytes)
-// 	if err != nil {
-// 		log.Fatalf("Failed to parse private key: %v", err)
-// 	}
-// }
-
 // // (POST /registration)
 func (s *Server) Registration(ctx echo.Context) error {
 	var resp generated.RegistrationResponse

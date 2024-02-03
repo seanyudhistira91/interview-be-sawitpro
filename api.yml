@@ -17,52 +17,6 @@ info:
 servers:
   - url: http://localhost
 paths:
-  # /hello:
-  #   get:
-  #     summary: This is just a test endpoint to get you started. Please delete this endpoint.
-  #     operationId: hello
-  #     parameters:
-  #       - name: id
-  #         in: query
-  #         required: true
-  #         schema:
-  #           type: integer
-  #     responses:
-  #       '200':
-  #         description: Test return
-  #         content:
-  #           application/json:    
-  #             schema:
-  #               $ref: "#/components/schemas/HelloResponse"
-  #       '404':
-  #         description: Not found
-  #         content:
-  #           application/json:
-  #             schema:
-  #               $ref: "#/components/schemas/ErrorResponse"
-  # /hello2:
-    # get:
-    #   summary: This is just a test endpoint to get you started. Please delete this endpoint.
-    #   operationId: hello2
-    #   parameters:
-    #     - name: id
-    #       in: query
-    #       required: true
-    #       schema:
-    #         type: integer
-    #   responses:
-    #     '200':
-    #       description: Test return
-    #       content:
-    #         application/json:    
-    #           schema:
-    #             $ref: "#/components/schemas/HelloResponse2"
-    #     '404':
-    #       description: Not found
-    #       content:
-    #         application/json:
-    #           schema:
-    #             $ref: "#/components/schemas/ErrorResponse"
   /registration:
     post:
       summary: This is registration endpoint.
@@ -170,27 +124,6 @@ components:
       scheme: bearer
       bearerFormat: JWT
   schemas:
-    # HelloResponse:
-    #   type: object
-    #   required:
-    #     - message
-    #   properties:
-    #     message:
-    #       type: string
-    # HelloResponse2:
-    #   type: object
-    #   required:
-    #     - message
-    #   properties:
-    #     message:
-    #       type: string
-    # ErrorResponse:
-      # type: object
-      # required:
-      #   - message
-      # properties:
-      #   message:
-      #     type: string
     # Registration
     RegistrationParam:
       type: object
